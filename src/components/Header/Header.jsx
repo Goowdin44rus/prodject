@@ -7,7 +7,7 @@ import styles from "../../styles/Header.module.css";
 import { ROUTES } from "../../utils/routes";
 
 import LOGO from "../../images/logo.svg";
-import AVATAR from "../../images/avatar.jpg";
+import AVATAR from "../../images/avatar.png";
 
 import { toggleForm } from "../../features/user/userSlice";
 import { useGetProductsQuery } from "../../features/api/apiSlice";
@@ -19,7 +19,7 @@ const Header = () => {
   const [searchValue, setSearchValue] = useState("");
   const { currentUser, cart } = useSelector(({ user }) => user);
 
-  const [values, setValues] = useState({ name: "Guest", avatar: AVATAR });
+  const [values, setValues] = useState({ name: "Гость", avatar: AVATAR });
 
   const { data, isLoading } = useGetProductsQuery({ title: searchValue });
 
@@ -42,7 +42,7 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.logo}>
         <Link to={ROUTES.HOME}>
-          <img src={LOGO} alt="Stuff" />
+          <img src={LOGO} alt="Star44" />
         </Link>
       </div>
 

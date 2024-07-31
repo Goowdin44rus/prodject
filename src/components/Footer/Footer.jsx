@@ -10,14 +10,14 @@ const Footer = () => (
   <section className={styles.footer}>
     <div className={styles.logo}>
       <Link to={ROUTES.HOME}>
-        <img src={LOGO} alt="Stuff" />
+        <img src={LOGO} alt="Star44" />
       </Link>
     </div>
 
     <div className={styles.rights}>
       Developed by{" "}
-      <a href="https://youtube.com/Tomkovich" target="_blank" rel="noreferrer">
-        Tomkovich
+      <a href="https://youtube.com" target="_blank" rel="noreferrer">
+        Starov44
       </a>
     </div>
 
